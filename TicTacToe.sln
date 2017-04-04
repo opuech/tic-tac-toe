@@ -1,0 +1,113 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6240A76C-C0D0-4F39-9B49-E8A39673ADE1}"
+	ProjectSection(SolutionItems) = preProject
+		.tfignore = .tfignore
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{5C76FFA6-13D8-4B4C-AA32-05654011892E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{542035FB-C0A1-4DA9-9E9D-DA67B9955E88}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\TicTacToe.Application\Application.csproj", "{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\TicTacToe.Domain\Domain.csproj", "{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\TicTacToe.Infrastructure\Infrastructure.csproj", "{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web", "src\TicTacToe.Web\Web.csproj", "{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IntegrationTests", "tests\TicTacToe.IntegrationTests\IntegrationTests.csproj", "{8B34F878-7F0D-403B-AAEA-B6386072055E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "tests\TicTacToe.Tests\Tests.csproj", "{9ACC04B0-3C17-4288-976E-92E7193B53F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{664F6C8B-69E0-4DF6-B806-4CDDA4504F9E}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "AzureResourceGroup1", "AzureResourceGroup1\AzureResourceGroup1.deployproj", "{79A53373-F57A-4186-AC9B-AF2FEAD50053}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B34F878-7F0D-403B-AAEA-B6386072055E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B34F878-7F0D-403B-AAEA-B6386072055E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B34F878-7F0D-403B-AAEA-B6386072055E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B34F878-7F0D-403B-AAEA-B6386072055E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ACC04B0-3C17-4288-976E-92E7193B53F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ACC04B0-3C17-4288-976E-92E7193B53F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ACC04B0-3C17-4288-976E-92E7193B53F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ACC04B0-3C17-4288-976E-92E7193B53F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A53373-F57A-4186-AC9B-AF2FEAD50053}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A53373-F57A-4186-AC9B-AF2FEAD50053}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A53373-F57A-4186-AC9B-AF2FEAD50053}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A53373-F57A-4186-AC9B-AF2FEAD50053}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8D5C3F39-DAB7-4FBD-8887-C8F1CFDC37F4} = {542035FB-C0A1-4DA9-9E9D-DA67B9955E88}
+		{D1084BA7-41CF-46FD-9E80-AE3537FC4F2E} = {542035FB-C0A1-4DA9-9E9D-DA67B9955E88}
+		{B4D606AE-BA5F-4C8D-9D35-C719C822B3EE} = {542035FB-C0A1-4DA9-9E9D-DA67B9955E88}
+		{D509B53C-DE75-4CAB-BB1B-B6A9439A15AF} = {542035FB-C0A1-4DA9-9E9D-DA67B9955E88}
+		{8B34F878-7F0D-403B-AAEA-B6386072055E} = {5C76FFA6-13D8-4B4C-AA32-05654011892E}
+		{9ACC04B0-3C17-4288-976E-92E7193B53F5} = {5C76FFA6-13D8-4B4C-AA32-05654011892E}
+		{79A53373-F57A-4186-AC9B-AF2FEAD50053} = {664F6C8B-69E0-4DF6-B806-4CDDA4504F9E}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://cofomoquebec.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = src\\TicTacToe.Application\\Application.csproj
+		SccProjectTopLevelParentUniqueName1 = TicTacToe.sln
+		SccProjectName1 = src/TicTacToe.Application
+		SccLocalPath1 = src\\TicTacToe.Application
+		SccProjectUniqueName2 = src\\TicTacToe.Domain\\Domain.csproj
+		SccProjectTopLevelParentUniqueName2 = TicTacToe.sln
+		SccProjectName2 = src/TicTacToe.Domain
+		SccLocalPath2 = src\\TicTacToe.Domain
+		SccProjectUniqueName3 = src\\TicTacToe.Infrastructure\\Infrastructure.csproj
+		SccProjectTopLevelParentUniqueName3 = TicTacToe.sln
+		SccProjectName3 = src/TicTacToe.Infrastructure
+		SccLocalPath3 = src\\TicTacToe.Infrastructure
+		SccProjectUniqueName4 = src\\TicTacToe.Web\\Web.csproj
+		SccProjectTopLevelParentUniqueName4 = TicTacToe.sln
+		SccProjectName4 = src/TicTacToe.Web
+		SccLocalPath4 = src\\TicTacToe.Web
+		SccProjectUniqueName5 = tests\\TicTacToe.IntegrationTests\\IntegrationTests.csproj
+		SccProjectTopLevelParentUniqueName5 = TicTacToe.sln
+		SccProjectName5 = tests/TicTacToe.IntegrationTests
+		SccLocalPath5 = tests\\TicTacToe.IntegrationTests
+		SccProjectUniqueName6 = tests\\TicTacToe.Tests\\Tests.csproj
+		SccProjectTopLevelParentUniqueName6 = TicTacToe.sln
+		SccProjectName6 = tests/TicTacToe.Tests
+		SccLocalPath6 = tests\\TicTacToe.Tests
+		SccProjectUniqueName7 = AzureResourceGroup1\\AzureResourceGroup1.deployproj
+		SccProjectTopLevelParentUniqueName7 = TicTacToe.sln
+		SccProjectName7 = AzureResourceGroup1
+		SccLocalPath7 = AzureResourceGroup1
+	EndGlobalSection
+EndGlobal
