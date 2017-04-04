@@ -1,0 +1,26 @@
+﻿<wait-cursor display-when="vm.isBusy"></wait-cursor>
+<div class="alert alert-danger" ng-show="vm.errorMessage">{{ vm.errorMessage }}</div>
+<div class="alert alert-success" ng-show="vm.successMessage">{{ vm.successMessage }}</div>
+
+<h1>Bienvenue {{vm.playerName}} au tournoi Tic Tac Toe!</h1>
+<br /><br />
+<div class="container">
+  
+    <div class="row">
+        <div id="playarea" class="col-6 col-sm-4 col-lg-3">
+            <div class="row" ng-repeat="(rowId, row) in vm.board.grid">
+                <div class="col-lg-4 col-sm-4 col-4 cell-TicTacToe" ng-repeat="(colId, cell) in row track by $index">
+                    <button class="img-responsive cell-TicTacToe" ng-click="vm.MakeMove(colId, rowId);">
+                        <img class="img-responsive cell-TicTacToe" ng-src="..\images\{{vm.Constants.Token[cell]}}-img.png">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        {{vm.Constants.DisplayState[vm.board.state]}}
+    </div>
+    
+</div>
+    

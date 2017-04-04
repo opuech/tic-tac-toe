@@ -1,0 +1,46 @@
+﻿{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "serverFarmName": {
+      "type": "string",
+      "defaultValue": "Default1"
+    },
+    "serverFarmResourceGroup": {
+      "type": "string",
+      "defaultValue": "Default-Web-EastUS"
+    },
+    "WebsiteName": {
+      "type": "string",
+      "defaultValue": "tictactoe-cofomoquebec"
+    }
+  },
+  "resources": [
+    {
+      "name": "[parameters('WebsiteName')]",
+      "type": "Microsoft.Web/sites",
+      "location": "East US",
+      "apiVersion": "2015-08-01",
+      "dependsOn": [],
+      "tags": {
+        "[concat('hidden-related:', resourceId(parameters('serverFarmResourceGroup'), 'Microsoft.Web/serverFarms', parameters('serverFarmName')))]": "Resource",
+        "displayName": "Website"
+      },
+      "properties": {
+        "name": "[parameters('WebsiteName')]",
+        "serverFarmId": "[resourceId(parameters('serverFarmResourceGroup'), 'Microsoft.Web/serverFarms', parameters('serverFarmName'))]",
+        "webSocketsEnabled": true,
+        "appSettings": [
+           {
+                "Name": "ASPNET_ENV",
+                "Value": "Staging"
+           }
+        ]
+      }
+    }
+    
+    
+  ],
+  "outputs": {
+  }
+}

@@ -1,0 +1,24 @@
+﻿<a href="#/nouveau" class="btn btn-primary"><span class="fa fa-plus"> Débuter une nouvelle partie</span></a>
+
+<h2><span class="fa fa-list"></span> Liste des parties</h2>
+
+<div class="col-md-12">
+    <div class="text-danger" ng-show="vm.errorMessage">{{ vm.errorMessage }}</div>
+    <wait-cursor display-when="vm.isBusy"></wait-cursor>
+    <table class="table table-responsive table-striped games">
+        <thead>
+            <tr>
+                <th>NomPlayer1</th>
+                <th>NomPlayer2</th>
+            </tr>
+        </thead>
+        <tr ng-repeat="game in vm.games">
+            <td>
+                <a ng-href="#/ouvrir/{{ game.id }}/{{ game.nomPlayer1 }}" class="btn btn-sm btn-primary"><span class="fa fa-edit"></span> {{ game.nomPlayer1 }} </a>
+            </td>
+            <td>
+                <a ng-href="#/ouvrir/{{ game.id }}/{{ game.nomPlayer2 }}" class="btn btn-sm btn-primary"><span class="fa fa-edit"></span> {{ game.nomPlayer2 }}</a>
+            </td>
+        </tr>
+    </table>
+</div>

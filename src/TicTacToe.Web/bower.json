@@ -1,0 +1,34 @@
+{
+  "name": "asp.net",
+  "private": true,
+  "dependencies": {
+    "underscore": "~1.8.3",
+    "jquery": "~2.1.4",
+    "jquery-validation": "~1.14.0",
+    "jquery-validation-unobtrusive": "~3.2.3",
+    "jquery-svg": "~1.5.0",
+    "bootstrap": "~3.3.7",
+    "bootstrap-sass-official": "~3.3.7",
+    "momentjs": "~2.16.0",
+    "momentjs-angular-module": "0.3.5",
+    "angular-ui-bootstrap": "~2.2.0",
+    "font-awesome": "~4.4.0",
+    "bootswatch": "3.3.7",
+    "angular": "~1.5.8",
+    "angular-route": "~1.5.8",
+    "travelmap": "~1.0.2",
+    "signalr": "2.2.0",
+    "angular-material": "~1.1.1",
+    "angular-messages": "~1.5.8",
+    "angular-animate": "~1.5.8",
+    "angular-aria": "~1.5.8",
+    "ui-bootstrap": "~2.2.0",
+    "angular-bootstrap-datetimepicker": "~1.1.3",
+    "angular-i18n": "1.5.9",
+    "tether": "1.3.1"
+  },
+  "resolutions": {
+    "angular": "^1.4.8",
+    "momentjs": "~2.16.0"
+  }
+}

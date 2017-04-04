@@ -1,0 +1,17 @@
+#playarea {
+	margin-top:20px;
+	background-color: #0082cb;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.cell-TicTacToe button:hover {
+  outline: 5px outset gray;
+}
+
+.cell-TicTacToe{
+    padding-right: 3px;
+	padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+

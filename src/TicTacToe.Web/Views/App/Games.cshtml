@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Liste des examens";
+}
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+    <script src="~/lib/underscore/underscore-min.js"></script>
+
+    <environment names="Development,Staging">
+        <script src="~/js/simpleControls.js"></script>
+        <script src="~/js/app-games.js"></script>
+        <script src="~/js/gamesController.js"></script>
+        <script src="~/js/gameController.js"></script>
+    </environment>
+
+    <environment names="Production">
+        <script src="~/lib/_app/simpleControls.js"></script>
+        <script src="~/lib/_app/app-games.js"></script>
+        <script src="~/lib/_app/gamesController.js"></script>
+        <script src="~/lib/_app/gameController.js"></script>
+    </environment>
+}
+
+
+<div class="row" ng-app="app-games">
+
+    <div class="col-md-12" ng-view></div>
+
+</div>
